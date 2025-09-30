@@ -48,6 +48,7 @@ function App() {
 
     const lastUpdatedDate = new Date(data.data.lastUpdate)
     setLastUpdated(lastUpdatedDate.toLocaleString())
+    setError(undefined)
   }, [])
 
   useEffect(() => {
